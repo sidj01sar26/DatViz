@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon"> -->
+    <link rel="icon" href="assets/icon.png" />
     <meta name="description" content="">
     <meta property="og:title" content="datviz" />
     <meta property="og:description" content="" />
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="datviz" />
 
+    <!-- style -->
     <style type="text/css">
         .loader-bg {
             position: fixed;
@@ -44,6 +46,7 @@
             }
         }
     </style>
+    <!-- style -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -83,28 +86,36 @@
 </head>
 
 <body>
+
+    <!-- landing page -->
     <div class="loader-bg">
         <div class="loader"><img src="./assets/preloader.webp" alt="Preloader"></div>
     </div>
-    <div class="well" id="well">
-        <a href="#top" title="Back to top"><button id="back-to-top-btn">
-                <i class="fas fa-angle-double-up"></i></button></a>
-        <div class="banner panel" id="top">
 
+    <div class="well" id="well">
+
+        <!-- <a href="#top" title="Back to top">
+            <button id="back-to-top-btn">
+                <i class="fas fa-angle-double-up"></i>
+            </button>
+        </a> -->
+
+        <div class="banner panel" id="top">
             <nav id="nav" data-aos="menu-area" data-aos-anchor-placement="bottom-top">
                 <a title="About" href="#about_anchor">About</a>
                 <a title="Timeline" href="#timeline_anchor">Data-Structures</a>
                 <a title="Contact" href="#contact_anchor">Contact</a>
             </nav>
 
-
             <video src="./assets/landing.mp4" loop muted autoplay></video>
 
             <div class="overlay"></div>
             <div class="heading">
 
-                <p class="new" style="margin-top: -200px; color: rgb(11, 195, 232); text-decoration: underline;">Data
-                    Structure Visualizer</p>
+                <p class="new" style="margin-top: -200px; color: rgb(11, 195, 232); text-decoration: underline;">
+                    Data Structure Visualizer
+                </p>
+
                 <div class="custom-container">
                     <p class="custom-paragraph">Data structures are like the blueprints of information organization in
                         computer science. <br> They provide the foundation for storing and managing data effectively,
@@ -117,23 +128,24 @@
                     </p>
                 </div>
 
-                <!-- <p class="dates">1st Feb 2024 - 3rd Feb 2024</p> -->
-
                 <div class="register-button">
-                    <div class="left"></div><a title="Register" href="" target="_blank">Read Blogs</a>
+                    <div class="left"></div>
+                    <a title="Register" href="" target="_blank">Read Blogs</a>
                     <div class="right"></div>
                 </div>
+
             </div>
         </div>
+        <!-- landing page -->
+
         <div class="content">
             <div class="about panel" id="about_anchor">
+
                 <!-- sidebar -->
                 <div class="nav-checkbox">
                     <input type="checkbox" id="check" />
                     <label for="check">
-                        <i class="fas fa-bars" id="btn">
-                            <!-- <span style='font-size:33px;'>&#8592;</span> -->
-                        </i>
+                        <i class="fas fa-bars" id="btn"></i>
                         <i class="fas fa-times" id="cancel"></i>
                     </label>
                     <div class="sidebar">
@@ -146,7 +158,9 @@
                         <a title="Contact" href="#contact_anchor">Contact Us</a>
                     </div>
                 </div>
+                <!-- sidebar -->
 
+                <!-- about -->
                 <img id="astronaut" alt="astronaut" src="./assets/astronaut.webp">
 
                 <img id="planet" alt="planet" src="./assets/moon.webp">
@@ -155,7 +169,7 @@
                     <h1 style="color: rgb(11, 195, 232);">About DatViz</h1>
                     <br>
                     <br>
-                    <p class="about-text">
+                    <p style="margin-left: 120px;" class="about-text">
                         Welcome to our platform, a digital oasis for data structure enthusiasts. Immerse yourself in
                         arrays, linked lists, trees, and more with vivid visualizations. Interact with dynamic
                         representations to grasp algorithmic complexities firsthand. Whether you're a student honing
@@ -167,6 +181,7 @@
                     </p>
                 </div>
             </div>
+            <!-- about -->
 
             <!-- timeline -->
             <div class="panel timeline" id="timeline_anchor">
@@ -387,12 +402,12 @@
                         <section class="card-mob">
                         </section>
                         <!-- Sorting -->
-
                     </section>
 
                     <div class="timeline-line"></div>
                 </div>
             </div>
+            <!-- timeline -->
 
             <div id="particles-js"></div>
         </div>
@@ -409,37 +424,78 @@
 
         <div class="footer-content" id="contact_anchor">
             <!-- Contact -->
+            <div class="ml-[45px]">
+                <div class="max-w-screen-lg py-10 px-4 sm:px-6 sm:flex justify-between mx-auto">
+                    <div class="p-5 sm:w-2/12 border-r">
+                        <div>
+                            <div class="mr-[200px] uppercase font-bold myfont">Explore</div>
+                            
+                            <ul class="mr-[100px]">
+                                <li class="my-2">
+                                    <a href="#">
+                                        <span class="text-gray-400 hover:text-red-700">Home</span>
+                                    </a>
+                                </li>
 
+                                <li class="my-2">
+                                    <a href="#about_anchor">
+                                        <span class="text-gray-400 hover:text-red-700">About</span>
+                                    </a>
+                                </li>
+
+                                <li class="my-2">
+                                    <a class="" href="#timeline_anchor">
+                                        <span class="text-gray-400 hover:text-red-700">Data-Structures</span>
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#">
+                                        <span class="text-gray-400 hover:text-red-700">Blogs</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 sm:w-7/12 border-r text-center">
+                        <h3 class="font-bold text-xl mb-2 myfont">Synthesis</h3>
+                        <p class="text-gray-400 text-sm mb-5">
+                            "Cultivating innovation through the synthesis of Data Structures and Algorithms with
+                            cutting-edge technology. Explore the transformative insights that drive efficiency and
+                            redefine possibilities in the digital age."
+                        </p>
+                    </div>
+                    <div class="p-5 sm:w-3/12">
+                        <div class="myfont uppercase font-bold">Contact Us</div>
+                        <br>
+                        <ul>
+                            <li class="my-2">
+                                <p class="text-gray-400">
+                                    22VG+W4X, Sector 7, Phase I, Pad. Dr. D. Y. Patil
+                                    Vidyapeeth, Nerul, Navi Mumbai, Maharashtra 400706
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="">
+                    <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
+                        <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row ml-[-56px] flex">
+
+
+
+                        </div>
+                        <div class="my-6 ml-[-56px] font-bold text-white">© DatViz.
+                            <span class="text-gray-400">All Rights Reserved.</span>
+                        </div>
+
+                        <div class="ml-[-50px] mb-[-110px] myfont justify-center">
+                            Made with ❤️ by GROUP 12
+                        </div>
+                    </div>
+                </section>
+            </div>
             <!-- Contact -->
         </div>
-
-        <div class="footer-bottom">
-            <p class="ml-[-10px]">DatViz 2024 <b></b><span>All rights reserved</span></p> <br>
-            <div class="container pt-1">
-                <div class="mb-5 flex justify-center text-xl text-center">
-
-                    <a href="https://www.linkedin.com/school/ramraoadikinstituteoftechnology/"
-                        class="icon icon-linkedin mr-9 text-neutral-200 hover:text-blue-400" target="_blank">
-                        <img src="assets/linkedin.png" height="27px" width="27px" alt="LinkedIn Icon">
-                    </a>
-
-                    <a href="https://github.com/sidj01sar26" target="_blank"
-                        class="icon icon-github mr-9 text-neutral-200 hover:text-blue-400">
-                        <img src="assets/github.png" height="27px" width="27px" alt="GitHub Icon">
-                    </a>
-
-                    <a href="https://www.instagram.com/dypatilrait/?hl=en" target="_blank"
-                        class="icon icon-instagram mr-9 text-neutral-200 hover:text-blue-400">
-                        <img src="assets/instagram.png" height="27px" width="27px" alt="Instagram Icon">
-                    </a>
-
-                </div>
-            </div>
-            <p class="text-neutral-400 justify-center ml-[-10px]">Made with ❤️ by GROUP 12
-        </div>
-
-
-
 
     </footer>
     </div>

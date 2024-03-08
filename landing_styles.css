@@ -1184,16 +1184,20 @@ nav a:hover {
 /* footer */
 footer {
   position: relative;
-  background-image: url("./assets/footer.gif");
+  background-image: url("./assets/foot.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
-  padding-top: 40px;
+  /* padding-top: 150px; */
   color: #fff;
   display: flex;
   justify-content: center;
+}
+
+.myfont {
+  color: rgb(11, 195, 232);
 }
 
 .footer-content {
