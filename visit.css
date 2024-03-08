@@ -1,15 +1,26 @@
-body {
-    background-image: url("./assets/blog.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+* {
+    overflow: hidden !important;
+}
+
+.lit {
+    background-color: black;
 }
 
 .myfont {
-    color: rgb(11, 195, 232);
+    color: rgb(49, 107, 119);
+    font-style: italic;
 }
 
-.arrow {
+.hey {
+    color: rgb(185, 183, 183);
+}
+
+.hi {
+    color: rgb(136, 98, 48);
+    font-size: 18px;
+}
+
+.arrows {
     position: absolute;
     top: -1%;
     left: 2%;
@@ -18,7 +29,7 @@ body {
     cursor: pointer;
 }
 
-.arrow span {
+.arrows span {
     display: block;
     width: 1.2vw;
     height: 1.2vw;
