@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icon.png" />
+    <link rel="stylesheet" href="../Queue/queue.css" />
+    <title>Queue Visualize</title>
+</head>
+
+<body>
+    <a href="../Visual/visit.html">
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <!-- <span></span> -->
+        </div>
+    </a>
+    <h1>Queue Visualization</h1><br>
+    <section>
+        <div class="sidebar">
+            <div class="bst menu">
+                <span class="data-structure-name">Queue</span>
+                <br>
+                <input type="bst-number" placeholder="Enter a value" class="input-insert-bst input" id="enqueuevalue" />
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <button class="insert-but-bst button" id="enqueue">Enqueue</button>
+                <br>
+                <button class="search-but-bst button" id="dequeue">Dequeue</button>
+                <br>
+                <form onsubmit="return clear()" id="f2">
+                    <input class="button" id="but" style="background-color: indianred !important;" type="submit"
+                        value="Clear" />
+                </form>
+            </div>
+        </div>
+
+        <canvas id="mycanvas" width="1000" height="550" style="border: 1px solid #000000"></canvas>
+    </section>
+
+    <script src="../Queue/queue.js"></script>
+</body>
+
+</html>
