@@ -8,29 +8,31 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 h1 {
     padding-top: 25px;
     margin-bottom: 20px;
     text-align: center;
-    color: rgb(236, 149, 10);
+    font-style: italic;
+    color: rgb(223, 101, 20);
 }
 
 section {
     display: flex;
     flex-direction: row;
-    background-color: rgb(157, 151, 151);
+    background-color: rgb(137, 133, 133);
 }
 
 .sidebar {
     border-radius: 10px;
     margin: 5px;
     background-image: url("../assets/foot.gif");
-    padding: 10px;
+    padding: 12px ;
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+    align-content:center;
     flex: 1;
 }
 
@@ -63,7 +65,7 @@ section {
     padding: 2px 9px;
     font-size: large;
     text-align: center !important;
-    margin-left: 200px;
+    margin-left: 193px;
 }
 
 .data-structure-name,
@@ -89,7 +91,7 @@ span {
 #enqueue,
 #dequeue {
     text-align: center;
-    padding: 3px 10px;
+    padding: 5px 10px;
     font-size: medium;
     font-weight: bold;
 }

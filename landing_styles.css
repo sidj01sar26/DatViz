@@ -116,23 +116,11 @@ video {
   min-height: 30vh;
 }
 
-.dates {
-  padding-top: 30px;
-  font-family: 'poppins' !important;
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-
 .new {
-  font-family: 'poppins' !important;
+  font-style: normal !important;
   font-size: 5rem;
   padding-top: 20px;
   font-weight: 600;
-}
-
-.new span {
-  color: greenyellow;
 }
 
 .heading img {
@@ -1177,7 +1165,7 @@ nav a:hover {
 /* footer */
 footer {
   position: relative;
-  background-image: url("./assets/foot.gif");
+  background-image: url("./assets/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
