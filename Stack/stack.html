@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Visualize</title>
+    <link rel="icon" href="../assets/icon.png" />
+    <link rel="stylesheet" href="../Stack/stack.css">
+</head>
+
+<body>
+    <!-- heading -->
+    <a href="../Visual/visit.html">
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <!-- <span></span> -->
+        </div>
+    </a>
+
+    <header>
+        <button class="heading-button">
+            <h1 class="heading">Stack Visualizer</h1>
+        </button>
+    </header>
+
+    <div class="container">
+        <div class="container-header">
+            <input type="number" class="text" placeholder="Enter a value" required>
+            <button class="push">Push</button>
+            <button class="pop ">Pop</button>
+            <button class="reset">Reset</button>
+        </div>
+
+        <div class="container-body">
+            <div class="stack">
+                <div class="main-stack-bucket"></div>
+            </div>
+
+            <div class="info">
+                <div class="sec1">
+                    <h3>Top of the Stack:-</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec2">
+                    <h3>Last Pushed Item:-</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec3">
+                    <h3>Last Popped Item:-</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec3">
+                    <h3>Size of the Stack:-</h3>
+                    <button class="box">5</button>
+                </div>
+
+                <div class="massage-box">
+                    <h2 style="color: green !important;">INFO</h2>
+                    <div class="massage"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="../Stack/stack.js"></script>
+</body>
+
+</html>
