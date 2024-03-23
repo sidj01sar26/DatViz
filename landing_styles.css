@@ -631,7 +631,7 @@ nav a:hover {
 /* astronaut */
 #astronaut {
   position: absolute;
-  right: 14vw;
+  right: 15vw;
   width: 10rem;
   height: auto;
   top: 5vh;
@@ -655,7 +655,7 @@ nav a:hover {
   position: absolute;
   left: 14vw;
   height: 10rem;
-  bottom: 12vh;
+  bottom: -2vh;
   margin: auto;
   z-index: 3;
   animation: planet 12s ease-in infinite alternate;
